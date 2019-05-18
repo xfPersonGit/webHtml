@@ -1,0 +1,29 @@
+document.write('<script src="//static.tianqistatic.com/static/js/common/lazy_load.js" type="text/javascript"></script>');
+$(function(){
+    let isShow = true;
+    $("#consultation a").mousemove(function(){
+        if(!isShow){
+            return false;
+        }else {
+            isShow = false;
+        }
+        let consultation = $("#consultation a")
+        consultation.removeClass("select");
+        let divList = $(".select-content");
+        divList.addClass("display-none");
+        $(this).addClass("select");
+        for(let i = 0 ; i < consultation.length; i++){
+            let className = $(consultation[i]).attr("class");
+            if(className == "select"){
+                $(divList[i]).removeClass("display-none");
+                break;
+            }
+        }
+        if(typeof clickSwitch == "function"){
+            clickSwitch();
+        }
+        $(this).mouseout(function(){
+            isShow = true;
+        })
+    });
+})

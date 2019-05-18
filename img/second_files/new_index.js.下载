@@ -1,0 +1,51 @@
+//$(document).ready(function(){
+//	$("#showPic a").hover(function(){
+//	$(this).parent().find(".maskLayer").hide();
+//	$(this).find(".maskLayer").show();
+//	});
+//	$("#showPic .maskLayer").each(function(){
+//	var img = $(this).parent().find("img");
+//	}).hide();
+//	$("#showPic").hover(null,function(){
+//	$(this).find(".maskLayer").hide();
+//	});
+//})
+
+$(document).ready(function(){
+	var myLi = $("#i_airTop > ul > li");
+	var myDiv =$("#i_airCont > .box");
+	myLi.each(function(i){
+	   $(this).mouseover(function(){
+		 myLi.removeClass("hover");
+		  $(this).addClass("hover");
+		   myDiv.hide();
+		   myDiv.eq(i).show();
+	   })
+	})
+})
+
+$(document).ready(function(){
+	var myLi = $("#i_qwTop > ul > li");
+	var myDiv =$("#i_qwCont > .box");
+	myLi.each(function(i){
+	   $(this).mouseover(function(){
+		 myLi.removeClass("hover");
+		  $(this).addClass("hover");
+		   myDiv.hide();
+		   myDiv.eq(i).show();
+	   })
+	})
+})
+
+$(document).ready(function(){
+	var myLi = $("#myTop > ul > li");
+	var myDiv =$("#myCont > div");
+	myLi.each(function(i){
+	   $(this).mouseover(function(){
+		 myLi.removeClass("hover");
+		  $(this).addClass("hover");
+		   myDiv.hide();
+		   myDiv.eq(i).show();
+	   });
+	});
+});

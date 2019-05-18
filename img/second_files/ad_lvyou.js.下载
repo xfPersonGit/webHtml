@@ -1,0 +1,68 @@
+document.write('<script src="//www.tianqi.com/static/2017/jQuery.1.8.2.min.js" type="text/javascript"></script>');
+
+function lvyou_home_left_top(){
+    /*【tianqi】pc-图片排行300*250 橱窗 创建于 2019/1/26  var cpro_id = "u3618358";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/common/res/qiwz8w.js?mhzgq=jzej\'></script>");
+}
+
+function lvyou_home_left_mid(){
+    /*【tianqi】pc-橱窗300*250 创建于 2019/1/26 var cpro_id = "u3633466";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/site/s1v60.js?jewdwwad=d\'></script>");
+    document.write('</div>');
+}
+
+function lvyou_home_left_btm(){
+    /*【tianqi】pc-图片排行300*250 橱窗 创建于 2019/1/26  var cpro_id = "u3618358";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/common/res/qiwz8w.js?mhzgq=jzej\'></script>");
+}
+
+function lvyou_city_btm(){
+    /*【tianqi】pc-橱窗300*250 创建于 2019/1/26 var cpro_id = "u3633466";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/site/s1v60.js?jewdwwad=d\'></script>");
+    document.write('</div>');
+}
+
+function lvyou_city_top(){
+    document.write('<div class="hhxadarea4">ad ad adtop');
+
+    document.write('</div>');
+}
+
+
+function list_left(){
+    /*【pc-tianqi】右侧300*500 创建于 2019/3/28 var cpro_id = "u3617978";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/site/yeboz0.js?tognx=pwpq\'></script>");
+}
+
+function jingdian_list_left_top(){
+    /*【pc-tianqi】右侧300*500 创建于 2019/3/28 var cpro_id = "u3617978";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/site/yeboz0.js?tognx=pwpq\'></script>");
+}
+function jingdian_list_left_btm(){
+    /*【pc-tianqi】右侧300*500 创建于 2019/3/28 var cpro_id = "u3617978";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/site/yeboz0.js?tognx=pwpq\'></script>");
+}
+
+function jingdian_detail_left_btm(){
+    /*【pc-tianqi】右侧300*500 创建于 2019/3/28 var cpro_id = "u3617978";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/site/yeboz0.js?tognx=pwpq\'></script>");
+}
+
+function jingdian_detail_left_top(){
+    /*【pc-tianqi】右侧300*500 创建于 2019/3/28 var cpro_id = "u3617978";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/site/yeboz0.js?tognx=pwpq\'></script>");
+}
+
+function meishi_detail_left_top(){
+    //300*256
+
+    document.write('<div class="hhx_ms_ad1 hhxmt32"><script type="text/javascript">var cpro_id = "u3142622"; </script> <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js"></script>');
+
+    document.write('</div>');
+}
+
+function toutiaotophenpin() {
+    //头条首页顶部横屏广告
+    /*【pc-tianqi】景点、头条顶部横屏广告 创建于 2019/3/19 var cpro_id = "u3701506";*/
+    document.writeln("<script type=\'text/javascript\' src=\'//datas.tianqistatic.com/site/o8fj.js?avnwbes=bu\'></script>");
+}

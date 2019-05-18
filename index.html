@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>泡泡大作战3.2完整版--当前播放的是：默认音乐</title>
+		<style>
+			body{
+				margin: 0px;
+	            width: 100%;
+	            height: 100%;
+				padding: 0px;
+				
+			}
+		</style>
+		<link rel="icon" href="img/blue.ico" type="image/x-icon" style="background-size: 100px 100px;"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script>
+			$(function(){
+				if(localStorage.br!=null&&localStorage.br!=""){
+					var v = localStorage.br
+					var ind;
+	//				var ind = v.indexOf("\\");
+	//				var index = v.indexOf("\\",3)
+					while(ind!="-1"){
+							if(ind==""||ind==null){
+								ind = v.indexOf("/")
+							}else{
+								ind = v.indexOf("/",ind+1)
+							}
+							if(ind!="-1"){
+								var t = ind
+							}
+					}
+					var i = v.indexOf(".");
+					var value = v.substring((t+1),i)
+					
+					if(sessionStorage.sessionPass!=null){
+						$("title").html("泡泡大作战3.2完整版--当前播放的是："+value)
+					}
+				}
+				
+			})
+		</script>
+	</head>
+	<body>
+		<iframe id="bigBody" src="img/img/img.html" frameborder="0" width="100%" height="100%" scrolling="auto"  marginheight= "0 " marginwidth= "0 " hspeace= "0 " vspace= "0 ">
+			<select>
+				<option>sdsdssssssssssss</option>
+			</select>
+		</iframe>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+document.write('<script src="//static.tianqistatic.com/static/2017/jQuery.1.8.2.min.js" type="text/javascript"></script>');
+$(function(){
+    $("img[alt!='扫码下载天气APP']").each(function(){
+        if(checkShow($(this)) && !isLoaded($(this))){
+            loadImg($(this))
+        }else {
+            $(this).attr('data-src',$(this).attr('src'));
+            $(this).attr('src','http://news.img.tianqistatic.com/static/lvyou2018/images/default.jpg');
+        }
+    })
+})
+$(window).scroll(function(){
+    $('img[alt!="扫码下载天气APP"]').each(function(){
+        if(checkShow($(this)) && !isLoaded($(this))){
+            loadImg($(this))
+        }
+    })
+})
+function clickSwitch() {
+    $('img[alt!="扫码下载天气APP"]').each(function(){
+        if(checkShow($(this)) && !isLoaded($(this))){
+            loadImg($(this))
+        }
+    })
+}
+function checkShow($img){
+    var scrollTop = $(window).scrollTop();
+    // var windowHeight = $(window).height();
+    var windowHeight = window.screen.height;
+    var offsetTop = $img.offset().top;
+    if(offsetTop < (scrollTop + windowHeight) && offsetTop > scrollTop){
+        return true;
+    }
+    return false;
+}
+
+function isLoaded($img) {
+    return $img.attr('data-src') === $img.attr('src');
+}
+
+function loadImg($img) {
+    var time = setTimeout(function(){
+        $img.attr('src',$img.attr('data-src'))
+        clearTimeout();
+    },300)
+
+}

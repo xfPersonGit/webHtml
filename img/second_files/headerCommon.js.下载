@@ -1,0 +1,120 @@
+
+
+$(function(){
+	(function(){
+		if(location.href.indexOf("tianqi.com") == -1){
+			location.href = "https://www.tianqi.com";
+		}
+	
+		$('.hhx_newSearch text').click(function(){
+			$('.hhx_newSearch ul').toggle();
+		});
+		$('.hhx_newSearch ul li').click(function(){
+			var innerhtml = $(this).text();
+			$('.hhx_newSearch text').text(innerhtml);
+			$('.hhx_newSearch ul').hide();
+		});
+	})();
+	
+	var targetElem = $('.tianqi_nav_next_box_tianqi'); 
+	var targetElem_life = $('.tianqi_nav_next_box_life');
+	var targetElem_jingdian = $('.tianqi_nav_box_jingdian');
+	var targetElem_shipin=$('.tianqi_nav_box_shipin');
+	var targetLi = $('.target_');
+	$('.li_shipin').mouseenter(function(){
+		targetElem_shipin.show();
+		targetElem.hide();
+		targetElem_life.hide();
+	    targetElem_jingdian.hide();
+		$('.weizhi').css({'visibility':'hidden'});
+		$('.newsmain').css('z-index','-1');
+		$('.newsmain h1').css({
+			'position':'relative',
+			'z-index':'-1'
+		})
+	});
+	
+	$('.li_tianqi').mouseenter(function(){
+		targetElem.show();
+		targetElem_life.hide();
+	    targetElem_jingdian.hide();
+		targetElem_shipin.hide();
+		$('.weizhi').css({'visibility':'hidden'});
+		$('.newsmain').css('z-index','-1');
+		$('.newsmain h1').css({
+			'position':'relative',
+			'z-index':'-1'
+		})
+	});
+	$('.li_life').mouseenter(function(){
+		targetElem_life.show();
+		targetElem.hide();
+	    targetElem_jingdian.hide();
+		targetElem_shipin.hide();
+		$('.weizhi').css({'visibility':'hidden'});
+		$('.newsmain').css('z-index','-1');
+		$('.newsmain h1').css({
+			'position':'relative',
+			'z-index':'-1'
+		})
+	});
+	
+	$('.tiaqni_header_box').mouseenter(function(){
+		targetElem.hide();
+		targetElem_life.hide();
+		targetElem_jingdian.hide();
+		targetElem_shipin.hide();
+		$('.weizhi').css({'visibility':'visible'});
+		$('.newsmain').css('z-index','0');
+		$('.newsmain h1').css({
+			'position':'',
+		})
+	});
+	$('.nav_jingdian').mouseenter(function () {
+	    // $(this).css({'background':'#247af2'}).siblings().css({'background':'#38f'});
+	    targetElem_jingdian.show();
+		targetElem.hide();
+		targetElem_life.hide();
+		targetElem_shipin.hide();
+	    $('.newsmain').css('z-index','-1');
+	    $('.weizhi').css({
+			'visibility':'hidden',
+		})
+	});
+	
+	targetElem.mouseleave(function(){
+		$(this).hide();$('.weizhi').css({'visibility':'visible'});
+		$('.newsmain').css('z-index','0');
+		$('.newsmain h1').css({
+			'position':'',
+		})
+	});
+	targetElem_life.mouseleave(function(){
+		$(this).hide();$('.weizhi').css({'visibility':'visible'});
+		$('.newsmain').css('z-index','0');
+		$('.newsmain h1').css({
+			'position':'',
+		})
+	});
+	targetElem_shipin.mouseleave(function(){
+		$(this).hide();$('.weizhi').css({'visibility':'visible'});
+		$('.newsmain').css('z-index','0');
+		$('.newsmain h1').css({
+			'position':'',
+		})
+	});
+	
+	targetElem_jingdian.mouseleave(function () {
+	    $(this).hide();$('.weizhi').css({'visibility':'visible'});
+	    $('.newsmain').css({
+	        'z-index':'0'
+	    })
+	})
+	
+	$('.tianqi_nav_content_box li').not('.target_').mouseenter(function(){
+		// $(this).css({'background':'#247af2'}).siblings().css({'background':'#38f'});
+		$('.newsmain').css('z-index','0');
+		targetElem_life.hide();targetElem.hide(); targetElem_jingdian.hide();
+	})
+	
+})

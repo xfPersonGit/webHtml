@@ -1,0 +1,88 @@
+.hhx_newNav{width: 100%;margin-bottom:30px;}
+.hhx_newNav img{margin: 0 3px;width: 7px;height: 10px;display: inline-block;}
+.hhx_newNav text{color: #999;font-size: 14px;display: inline-block;font-family: "Microsoft YaHei"}
+.hhx_newNav a{color: #000;font-size: 15px;display: inline-block;font-family: "Microsoft YaHei"}
+.hhx_newNav a:hover{color: #3388ff;}
+.hhx_art_detail li a div p:hover{color: #3388ff!important;}
+.hhx_art_detail li a:hover img{transform: scale(1.1);-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-o-transform: scale(1.1);transition: all 1s ease 0s;-webkit-transform: all 1s ease 0s;-moz-transform: all 1s ease 0s;-o-transform: all 1s ease 0s;}
+.hhx_read_next{color: #333;font-family: "Microsoft YaHei";font-size: 16px;padding: 10px 0;
+    width: 49%;
+    float: left;
+    margin-right: 1%;
+    height: 41px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.hhx_read_next:hover{color: #3388ff!important;}
+.tit20 a:hover{color: #3388FF!important;}
+.left a:hover{color: #3388FF!important;}
+
+
+/* 猜你喜欢 */
+.tianqi_guessLike{position: relative;overflow: hidden;margin: 20px 0;}
+.tianqi_guessLike em{display:inline-block;width:4px;height:20px;background:#38f;margin-right: 12px;}
+.tianqi_guessLike .tianqi_guessLike_href{display: inline-block;padding-left: 0;font-weight: normal;font-size: 18px;}
+.tianqi_guessLike .tianqi_guessLike_more{position: absolute;right: 0;font-family: 'Microsoft YaHei';font-size: 16px;}
+.tianqi_guessLike .tianqi_guessLike_more i{font-family: 'simsun';font-size: 16px;color: #000;}
+
+.hhx_art_detail li{width: 100%;margin: 10px 0;}
+.hhx_art_detail li a{width: 100%;display: block;overflow: hidden;}
+.hhx_art_detail li a .spanTit{overflow: hidden;display: inline-block;width: 156px;height: 104px;float: left;overflow: hidden;}
+.hhx_art_detail li a .spanTit img{display: block;width: 100%;height: 100%;}
+.hhx_art_detail li a div{width: 573px;margin-left: 20px;display: inline-block;}
+.hhx_art_detail li a div p{height: 52px;padding-top: 10px;font-size: 18px;color: #333;line-height: 28px;overflow: hidden;font-weight: bold;}
+.hhx_art_detail li a div .spanContent{font-size: 12px;color: #999999;margin-top: 19px;}
+
+video{width: 100%;height:427.5px;margin: 0;padding: 0;margin-top:10px}
+
+
+/*PC端点击阅读全文样式*/
+.show_more_btn {
+    width: 100%;
+    height: 70px;
+    display:block;
+    clear:both;
+    font-size:18px;
+    font-weight: normal!important;
+    text-align: center;
+    position: relative;
+    margin:0;
+    padding-top: 4px
+}
+.show_more_btn i{
+    width: 15px;
+    height: 10px;
+    background:url(/static/wap2018/images/ndArrow.png) no-repeat center center;
+    background-size: 20px;
+    display: inline-block;
+    vertical-align: baseline;
+    padding-bottom: 4px
+}
+.shadow{
+    width: 100%;
+    height: 111px;
+    background: linear-gradient(to bottom , rgba(255,255,255,0) , rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(to bottom , rgba(255,255,255,0) , rgba(255,255,255,1) 100%) ;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(to bottom , rgba(255,255,255,0) ,  rgba(255,255,255,1) 100%) ;
+    background: -o-linear-gradient(to bottom , rgba(255,255,255,0) ,  rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(to bottom , rgba(255,255,255,0) ,  rgba(255,255,255,1) 100%) ;
+    position: absolute;
+    top: -111px;
+    left: 0;
+}
+.show_more_text{
+    font-size: 18px;
+    width:170px;
+    height: 40px;
+    border: 1px solid #3388ff;
+    color: #3388ff;
+    line-height: 40px;
+    padding: 10px 40px;
+    border-radius: 5px
+}
+.show_more_text:hover{
+    background-color: rgba(51, 136, 255, 0.2);
+    cursor: pointer
+}
