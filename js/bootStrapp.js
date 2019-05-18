@@ -218,6 +218,7 @@ alert(JSON.parse(optionss)[0]);*/
 					}
 					$(".game").show();
 							$(".page").fadeOut();
+							$(".alertIsNotNewVersion").hide();
 							show();
 							$(".pause").show();
 							//bkg
